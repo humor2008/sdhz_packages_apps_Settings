@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2012-2015 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -301,10 +301,8 @@
     <string name="notification_light_voicemail_title">Voicemail</string>
     <string name="notification_light_brightness" translatable="false">@string/brightness</string>
     <string name="notification_light_screen_on">Lights with screen on</string>
-    <string name="notification_light_zen_mode">Lights in Do Not Disturb mode</string>
     <string name="notification_light_use_multiple_leds">Multiple LEDs</string>
     <string name="keywords_lights_brightness_level">dim leds brightness</string>
-    <string name="notification_light_automagic">Choose colors automatically</string>
 
     <!-- Lights settings, LED notification -->
     <string name="led_notification_title">Light settings</string>
@@ -402,7 +400,7 @@
     <string name="app_ops_summaries_toggle_bluetooth">toggle bluetooth</string>
     <string name="app_ops_summaries_start_at_boot">start at boot</string>
     <string name="app_ops_summaries_toggle_nfc">toggle NFC</string>
-    <string name="app_ops_summaries_toggle_mobile_data">toggle cellular data</string>
+    <string name="app_ops_summaries_toggle_mobile_data">toggle mobile data</string>
     <string name="app_ops_summaries_superuser">root access</string>
 
     <!-- User display names for app ops codes - extension of AOSP -->
@@ -473,7 +471,7 @@
     <string name="app_ops_labels_toggle_bluetooth">Toggle bluetooth</string>
     <string name="app_ops_labels_start_at_boot">Start at boot</string>
     <string name="app_ops_labels_toggle_nfc">Toggle NFC</string>
-    <string name="app_ops_labels_toggle_mobile_data">Toggle cellular data</string>
+    <string name="app_ops_labels_toggle_mobile_data">Toggle mobile data</string>
     <string name="app_ops_labels_superuser">Root access</string>
 
     <!-- App ops permissions -->
@@ -883,9 +881,6 @@
     <string name="autoperf_summary">Automatically choose an appropriate battery mode for various apps</string>
     <string name="perf_profile_title">Battery mode</string>
 
-    <!-- Memory -->
-    <string name="memory_startup_apps_title">Apps started on boot</string>
-
     <!-- Sound & notification > Sound section: Title for the option defining the default notification ringtone. [CHAR LIMIT=30] -->
     <string name="notification_ringtone_title_cm">Notification tone</string>
 
@@ -1039,10 +1034,6 @@
     <string name="apn_ppp_number">APN PPP phone number</string>
     <string name="ppp_number" translatable="false">ppp_number</string>
 
-    <!-- APNs screen message indicating new APN user is adding is a duplicate -->
-    <string name="duplicate_apn_error_title">Duplicate APN</string>
-    <string name="duplicate_apn_error_message">This APN already exists. Discard or change parameters.</string>
-
     <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> is <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
     <string name="sim_disabled">disabled</string>
     <string name="sim_missing">missing or faulty</string>
@@ -1066,7 +1057,7 @@
     <string name="sim_card_status_title">SIM %d status</string>
     <string name="sim_card_lock_settings_title">SIM %d lock settings</string>
     <string name="sim_card_summary_empty">SIM not inserted</string>
-    <string name="sim_mobile_network_settings_category_title">Cellular network settings</string>
+    <string name="sim_mobile_network_settings_category_title">Mobile network settings</string>
     <string name="sim_mobile_network_settings_title">SIM %d settings</string>
 
     <!-- Zen mode allowed event setting summary items -->
@@ -1116,17 +1107,6 @@
     <string name="factory_reset_warning_text_reset_now">RESET NOW</string>
     <string name="factory_reset_warning_text_message">All your accounts, apps, app data, and system settings will be removed from this device. This cannot be reversed.</string>
 
-    <!-- Tethering & portable hotspot other category -->
-    <string name="tethering_other_category_text">Other</string>
-    <!-- Wi-Fi tethering inactivity timeout -->
-    <string name="hotstpot_inactivity_timeout_text">Wi\u2011Fi hotspot timeout</string>
-    <string name="hotstpot_inactivity_timeout_never">Never</string>
-    <string name="hotstpot_inactivity_timeout_1_minute">1 minute</string>
-    <string name="hotstpot_inactivity_timeout_5_minutes">5 minutes</string>
-    <string name="hotstpot_inactivity_timeout_10_minutes">10 minutes</string>
-    <string name="hotstpot_inactivity_timeout_never_summary_text">Portable Wi\u2011Fi hotspot will never timeout</string>
-    <string name="hotstpot_inactivity_timeout_summary_text">Portable Wi\u2011Fi hotspot will timeout after <xliff:g id="timeout">%1$s</xliff:g></string>
-
     <!-- Live lock screen -->
     <!-- Live lock screen title -->
     <string name="live_lock_screen_title">Live lock screen</string>
@@ -1136,9 +1116,6 @@
     <string name="live_lock_screen_settings_button">Settings</string>
     <!-- Live lock screen settings screen, caption for when live lock screens are disabled -->
     <string name="live_lock_screen_settings_disabled_prompt">To view available Live lock screens, turn Live lock screens on.</string>
-
-    <string name="interruptions_ignore_while_media_title">Prevent audio ducking</string>
-    <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when a notification arrives</string>
 
     <!-- CM Legal -->
     <string name="cmlicense_title">CyanogenMod legal</string>

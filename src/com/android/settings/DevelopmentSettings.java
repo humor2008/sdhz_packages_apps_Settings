@@ -82,6 +82,7 @@ import com.android.settings.fuelgauge.InactiveApps;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
+import com.android.settings.widget.SeekBarPreferenceCham;
 import cyanogenmod.providers.CMSettings;
 
 import java.util.ArrayList;
@@ -139,6 +140,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String SIMULATE_COLOR_SPACE = "simulate_color_space";
     private static final String USB_AUDIO_KEY = "usb_audio";
     private static final String SHOW_CPU_USAGE_KEY = "show_cpu_usage";
+    private static final String SHOW_CPU_INFO_KEY = "show_cpu_info";
     private static final String FORCE_HARDWARE_UI_KEY = "force_hw_ui";
     private static final String FORCE_MSAA_KEY = "force_msaa";
     private static final String TRACK_FRAME_TIME_KEY = "track_frame_time";
@@ -184,6 +186,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String SHOW_ALL_ANRS_KEY = "show_all_anrs";
 
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+    private static final String HOLD_BACK_TO_KILL_TIMEOUT = "hold_back_to_kill_timeout";
 
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
@@ -253,6 +256,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mDisableOverlays;
     private SwitchPreference mEnableMultiWindow;
     private SwitchPreference mShowCpuUsage;
+    private SwitchPreference mShowCpuInfo;
     private SwitchPreference mForceHardwareUi;
     private SwitchPreference mForceMsaa;
     private SwitchPreference mShowHwScreenUpdates;
@@ -279,6 +283,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mShowAllANRs;
     private SwitchPreference mKillAppLongpressBack;
+    private SeekBarPreferenceCham mHoldBackToKillTimeout;
 
     private ListPreference mRootAccess;
     private Object mSelectedRootValue;
@@ -408,6 +413,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mShowScreenUpdates = findAndInitSwitchPref(SHOW_SCREEN_UPDATES_KEY);
         mDisableOverlays = findAndInitSwitchPref(DISABLE_OVERLAYS_KEY);
         mShowCpuUsage = findAndInitSwitchPref(SHOW_CPU_USAGE_KEY);
+        mShowCpuInfo = findAndInitSwitchPref(SHOW_CPU_INFO_KEY);
         mForceHardwareUi = findAndInitSwitchPref(FORCE_HARDWARE_UI_KEY);
         mForceMsaa = findAndInitSwitchPref(FORCE_MSAA_KEY);
         mTrackFrameTime = addListPreference(TRACK_FRAME_TIME_KEY);
@@ -459,6 +465,12 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mResetSwitchPrefs.add(mShowAllANRs);
 
         mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
+        mHoldBackToKillTimeout =
+                    (SeekBarPreferenceCham) findPreference(HOLD_BACK_TO_KILL_TIMEOUT);
+        int holdBackToKillTimeout = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.HOLD_BACK_TO_KILL_TIMEOUT, 750);
+        mHoldBackToKillTimeout.setValue(holdBackToKillTimeout / 1);
+        mHoldBackToKillTimeout.setOnPreferenceChangeListener(this);
 
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
@@ -686,6 +698,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateShowTouchesOptions();
         updateFlingerOptions();
         updateCpuUsageOptions();
+        updateCpuInfoOptions();
         updateHardwareUiOptions();
         updateMsaaOptions();
         updateTrackFrameTimeOptions();
@@ -1596,6 +1609,25 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         }
     }
 
+    private void updateCpuInfoOptions() {
+        updateSwitchPreference(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
+                Settings.Global.SHOW_CPU, 0) != 0);
+    }
+
+    private void writeCpuInfoOptions() {
+        boolean value = mShowCpuInfo.isChecked();
+        Settings.Global.putInt(getActivity().getContentResolver(),
+                Settings.Global.SHOW_CPU, value ? 1 : 0);
+        Intent service = (new Intent())
+                .setClassName("com.android.systemui", "com.android.systemui.CPUInfoService");
+        if (value) {
+            getActivity().startService(service);
+        } else {
+            getActivity().stopService(service);
+        }
+    }
+
+
     private void writeImmediatelyDestroyActivitiesOptions() {
         try {
             ActivityManagerNative.getDefault().setAlwaysFinish(
@@ -1965,6 +1997,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             }
         } else if (preference == mShowCpuUsage) {
             writeCpuUsageOptions();
+        } else if (preference == mShowCpuInfo) {
+            writeCpuInfoOptions();
         } else if (preference == mImmediatelyDestroyActivities) {
             writeImmediatelyDestroyActivitiesOptions();
         } else if (preference == mShowAllANRs) {
@@ -2106,6 +2140,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mKeepScreenOn) {
             writeStayAwakeOptions(newValue);
+            return true;
+        } else if (preference == mHoldBackToKillTimeout) {
+            int killTimeout = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HOLD_BACK_TO_KILL_TIMEOUT, killTimeout * 1);
             return true;
         }
         return false;

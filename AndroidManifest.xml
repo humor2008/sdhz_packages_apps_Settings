@@ -1204,6 +1204,21 @@
                 android:value="true" />
         </activity>
 
+
+        <!-- PA Pie settings activity. -->
+        <activity android:name="Settings$PieControlSettingsActivity"
+                android:label="@string/pa_pie_control_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.paranoid.PieControl" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/button_settings" />
+        </activity>
+
         <activity android:name="MonitoringCertInfoActivity"
                 android:label="@string/ssl_ca_cert_dialog_title"
                 android:theme="@style/Transparent"
@@ -1935,6 +1950,9 @@
         </activity>
 
 
+        <activity android:name=".rr.gestureanywhere.GestureAnywhereBuilderActivity" />
+        <activity android:name=".rr.gestureanywhere.GestureAnywhereCreateGestureActivity" />
+
         <!-- Development settings -->
 
         <!-- DeviceInfo adds the user's requested build to stats upload.  -->
@@ -2527,23 +2545,6 @@
                 android:resource="@id/sound_settings" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
-        </activity>
-
-        <!-- Notification manager -->
-        <activity android:name="Settings$NotificationManagerActivity"
-                android:label="@string/notification_manager"
-                android:exported="true"
-                android:taskAffinity="">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.NOTIFICATION_MANAGER" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.android.settings.SHORTCUT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.notification.NotificationManagerSettings" />
-            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
-                android:resource="@id/notification_manager" />
         </activity>
 
         <!-- Show apps for which application-level notification settings are applicable -->

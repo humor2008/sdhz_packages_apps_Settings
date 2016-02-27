@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2015 The SudaMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- show network traffic -->
+    <string-array name="entries_status_bar_network_traffic_style" translatable="false">
+        <item>@string/status_bar_network_traffic_style_disable</item>
+        <item>@string/status_bar_network_traffic_style_up</item>
+        <item>@string/status_bar_network_traffic_style_down</item>
+        <item>@string/status_bar_network_traffic_style_all</item>
+    </string-array>
+
+    <string-array name="values_status_bar_network_traffic_style" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Listview animation -->
+    <string-array name="listview_animation_entries" translatable="false">
+        <item>@string/listview_off</item>
+        <item>@string/listview_wave_left</item>
+        <item>@string/listview_wave_right</item>
+        <item>@string/listview_scale</item>
+        <item>@string/listview_alpha</item>  
+        <item>@string/listview_stack_top</item>
+        <item>@string/listview_stack_bottom</item>
+        <item>@string/listview_unfold</item>
+        <item>@string/listview_fold</item> 
+        <item>@string/listview_translate_left</item>
+        <item>@string/listview_translate_right</item>
+        <item>@string/listview_rotate</item>
+    </string-array>
+
+    <string-array name="listview_animation_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <!-- Listview Interpolator -->
+    <string-array name="listview_interpolator_entries" translatable="false">
+        <item>@string/listview_off</item>
+        <item>@string/listview_accelerate_interpolator</item>
+        <item>@string/listview_decelerate_interpolator</item>
+        <item>@string/listview_accelerate_decelerate_interpolator</item>
+        <item>@string/listview_anticipate_interpolator</item>
+        <item>@string/listview_overshoot_interpolator</item>
+        <item>@string/listview_anticipate_overshoot_interpolator</item>
+        <item>@string/listview_bounce_interpolator</item>
+    </string-array>
+
+    <string-array name="listview_interpolator_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <!-- Statusbar date -->
+    <string-array name="status_bar_date_entries">
+        <item>@string/status_bar_date_none</item>
+        <item>@string/status_bar_date_small</item>
+        <item>@string/status_bar_date_normal</item>
+    </string-array>
+
+    <string-array name="status_bar_date_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_date_style_entries">
+        <item>@string/status_bar_date_style_normal</item>
+        <item>@string/status_bar_date_style_lowercase</item>
+        <item>@string/status_bar_date_style_uppercase</item>
+    </string-array>
+
+    <string-array name="status_bar_date_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="status_bar_date_format_entries_values">
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>dd.MM.yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMM dd</item>
+        <item>MMM dd, yyyy</item>
+        <item>MMMM dd, yyyy</item>
+        <item>EEE</item>
+        <item>EEE dd</item>
+        <item>EEE dd/MM</item>
+        <item>EEE dd.MM.</item>
+        <item>EEE MM/dd</item>
+        <item>EEE dd MMM</item>
+        <item>EEE dd. MMMM</item>
+        <item>EEE MMM dd</item>
+        <item>EEE MMMM dd</item>
+        <item>EEE dd.MMMM</item>
+        <item>EEEE dd/MM</item>
+        <item>EEEE dd.MM.</item>
+        <item>EEEE MM/dd</item>
+        <item>@string/status_bar_date_format_custom</item>
+    </string-array>
+
+    <!-- Statusbar clock font style -->
+    <string-array name="clock_font_style_entries">
+        <item>@string/clock_font_normal</item>
+        <item>@string/clock_font_italic</item>
+        <item>@string/clock_font_bold</item>
+        <item>@string/clock_font_bold_italic</item>
+        <item>@string/clock_font_light</item>
+        <item>@string/clock_font_light_italic</item>
+        <item>@string/clock_font_thin</item>
+        <item>@string/clock_font_thin_italic</item>
+        <item>@string/clock_font_condensed</item>
+        <item>@string/clock_font_condensed_italic</item>
+        <item>@string/clock_font_condensed_bold</item>
+        <item>@string/clock_font_condensed_bold_italic</item>
+        <item>@string/clock_font_medium</item>
+        <item>@string/clock_font_medium_italic</item>
+    </string-array>
+
+    <string-array name="clock_font_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <!-- Status bar clock font sizes -->
+    <string-array name="clock_font_size_entries" translatable="false">
+        <item>@string/clock_font_size_4</item>
+        <item>@string/clock_font_size_5</item>
+        <item>@string/clock_font_size_6</item>
+        <item>@string/clock_font_size_7</item>
+        <item>@string/clock_font_size_8</item>
+        <item>@string/clock_font_size_9</item>
+        <item>@string/clock_font_size_10</item>
+        <item>@string/clock_font_size_11</item>
+        <item>@string/clock_font_size_12</item>
+        <item>@string/clock_font_size_13</item>
+        <item>@string/clock_font_size_14</item>
+        <item>@string/clock_font_size_15</item>
+        <item>@string/clock_font_size_16</item>
+        <item>@string/clock_font_size_17</item>
+        <item>@string/clock_font_size_18</item>
+        <item>@string/clock_font_size_19</item>
+        <item>@string/clock_font_size_20</item>
+        <item>@string/clock_font_size_21</item>
+        <item>@string/clock_font_size_22</item>
+        <item>@string/clock_font_size_23</item>
+    </string-array>
+
+    <string-array name="clock_font_size_values" translatable="false">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+ <!-- Carrier Label -->
+    <string-array name="carrier_label_entries">
+        <item>@string/show_carrier_disabled</item>
+        <item>@string/show_carrier_keyguard</item>
+        <item>@string/show_carrier_statusbar</item>
+        <item>@string/show_carrier_enabled</item>
+    </string-array>
+
+    <string-array name="carrier_label_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+     <!-- Battery Bar -->
+     <string-array name="battery_bar_entries">
+         <item>@string/battery_help</item>
+         <item>@string/battery_statubar</item>
+         <item>@string/battery_top</item>
+         <item>@string/battery_bottom</item>
+     </string-array>
+ 
+     <string-array name="battery_bar_values" translatable="false">
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+     </string-array>
+ 
+     <string-array name="battery_bar_style_entries">
+         <item>Regular</item>
+         <item>Center-mirrored</item>
+     </string-array>
+ 
+     <string-array name="battery_bar_style_values" translatable="false">
+         <item>0</item>
+         <item>1</item>
+     </string-array>
+ 
+     <string-array name="battery_bar_thickness_entries">
+         <item>1 dp</item>
+         <item>2 dp</item>
+         <item>3 dp</item>
+         <item>4 dp</item>
+     </string-array>
+ 
+     <string-array name="battery_bar_thickness_values" translatable="false">
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+         <item>4</item>
+     </string-array>
+
+    <!-- LS Weather -->
+    <string-array name="weather_condition_icon_entries">
+        <item>@string/weather_condition_icon_monochrome_title</item>
+        <item>@string/weather_condition_icon_colored_title</item>
+        <item>@string/weather_condition_icon_vclouds_title</item>
+    </string-array>
+
+    <string-array name="weather_condition_icon_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="clock_date_position_entries">
+        <item>@string/position_right_title</item>
+        <item>@string/position_centered_title</item>
+        <item>@string/hidden_title</item>
+    </string-array>
+
+   <!-- Custom header images -->
+    <string-array name="custom_header_entries">
+        <item>@string/custom_header_image_0</item>
+        <item>@string/custom_header_image_1</item>
+        <item>@string/custom_header_image_2</item>
+    </string-array>
+
+    <string-array name="custom_header_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+   <!-- Gesture Anywhere -->
+    <string-array name="gesture_anywhere_position_entries" translatable="false">
+        <item>@string/gesture_anywhere_position_left</item>
+        <item>@string/gesture_anywhere_position_right</item>
+    </string-array>
+
+    <string-array name="gesture_anywhere_position_values" translatable="false">
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <!-- PA PIE -->
+     <string-array name="entries_pa_pie_size">
+         <item>@string/pa_pie_size_small</item>
+         <item>@string/pa_pie_size_default</item>
+         <item>@string/pa_pie_size_large</item>
+         <item>@string/pa_pie_size_gigantic</item>
+         <item>@string/pa_pie_size_monster</item>
+         <item>@string/pa_pie_size_enormous</item>
+     </string-array>
+ 
+     <string-array name="values_pa_pie_size" translatable="false">
+         <item>0.9</item>
+         <item>1.0</item>
+         <item>1.1</item>
+         <item>1.2</item>
+         <item>1.3</item>
+         <item>1.4</item>
+     </string-array>
+ 
+     <string-array name="entries_pa_pie_gravity">
+         <item>@string/pa_pie_gravity_left</item>
+         <item>@string/pa_pie_gravity_right</item>
+         <item>@string/pa_pie_gravity_bottom</item>
+     </string-array>
+ 
+     <string-array name="values_pa_pie_gravity" translatable="false">
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+     </string-array>
+ 
+     <string-array name="entries_pa_pie_mode">
+         <item>@string/pa_pie_mode_bare</item>
+         <item>@string/pa_pie_mode_quick</item>
+         <item>@string/pa_pie_mode_default</item>
+         <item>@string/pa_pie_mode_slow</item>
+     </string-array>
+ 
+     <string-array name="values_pa_pie_mode" translatable="false">
+         <item>-1</item>
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+     </string-array>
+ 
+     <string-array name="entries_pa_pie_angle">
+         <item>@string/pa_pie_angle_none</item>
+         <item>@string/pa_pie_angle_small</item>
+         <item>@string/pa_pie_angle_big</item>
+         <item>@string/pa_pie_angle_huge</item>
+         <item>@string/pa_pie_angle_super</item>
+     </string-array>
+ 
+     <string-array name="values_pa_pie_angle" translatable="false">
+         <item>0</item>
+         <item>6</item>
+         <item>12</item>
+         <item>18</item>
+         <item>24</item>
+     </string-array>
+ 
+     <string-array name="entries_pa_pie_gap">
+         <item>@string/pa_pie_gap_none</item>
+         <item>@string/pa_pie_gap_small</item>
+         <item>@string/pa_pie_gap_big</item>
+         <item>@string/pa_pie_gap_huge</item>
+     </string-array>
+ 
+     <string-array name="values_pa_pie_gap" translatable="false">
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+     </string-array>
+
+    <!-- Lock Clock Fonts -->
+    <string-array name="lock_clock_fonts_entries" translatable="false">
+        <item>@string/lock_clock_font_normal</item>
+        <item>@string/lock_clock_font_bold</item>
+        <item>@string/lock_clock_font_italic</item>
+        <item>@string/lock_clock_font_bold_italic</item>
+        <item>@string/lock_clock_font_light_normal</item>
+        <item>@string/lock_clock_font_light_italic</item>
+        <item>@string/lock_clock_font_thin_normal</item>
+        <item>@string/lock_clock_font_thin_italic</item>
+        <item>@string/lock_clock_font_condensed_normal</item>
+        <item>@string/lock_clock_font_condensed_bold</item>
+        <item>@string/lock_clock_font_condensed_italic</item>
+        <item>@string/lock_clock_font_condensed_bold_italic</item>
+        <item>@string/lock_clock_font_medium_normal</item>
+        <item>@string/lock_clock_font_medium_italic</item>
+        <item>@string/lock_clock_font_black_normal</item>
+        <item>@string/lock_clock_font_black_italic</item>
+        <item>@string/lock_clock_font_condensed_light_normal</item>
+        <item>@string/lock_clock_font_condensed_light_italic</item>
+    </string-array>
+
+     <string-array name="lock_clock_fonts_values" translatable="false">
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+         <item>4</item>
+         <item>5</item>
+         <item>6</item>
+         <item>7</item>
+         <item>8</item>
+         <item>9</item>
+         <item>10</item>
+         <item>11</item>
+      	 <item>12</item>
+         <item>13</item>
+         <item>14</item>
+         <item>15</item>
+         <item>16</item>
+         <item>17</item>
+     </string-array>
+
+   <string-array name="clock_date_position_entries" translatable="false">
+          <item>@string/clock_date_left</item>
+          <item>@string/clock_date_right</item>
+      </string-array>
+
+   <string-array name="clock_date_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+     </string-array>
+
+</resources>

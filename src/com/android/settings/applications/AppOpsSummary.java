@@ -1,6 +1,5 @@
 /**
  * Copyright (C) 2013 The Android Open Source Project
- * Copyright (C) 2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy
@@ -40,7 +39,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import com.android.internal.logging.MetricsLogger;
@@ -51,7 +49,7 @@ import com.android.settings.R;
 public class AppOpsSummary extends InstrumentedFragment {
     // layout inflater object used to inflate views
     private LayoutInflater mInflater;
-
+    
     private ViewGroup mContentContainer;
     private View mRootView;
     private ViewPager mViewPager;
@@ -134,19 +132,10 @@ public class AppOpsSummary extends InstrumentedFragment {
 
         mPageNames = getResources().getTextArray(R.array.app_ops_categories_cm);
 
-        int defaultTab = -1;
-        Bundle bundle = getArguments();
-        if (bundle != null) {
-            defaultTab = Arrays.asList(mPageNames).indexOf(bundle.getString("appops_tab", ""));
-        }
-
         mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
         mAdapter = new MyPagerAdapter(getChildFragmentManager(),
                 filterTemplates(AppOpsState.ALL_TEMPLATES));
         mViewPager.setAdapter(mAdapter);
-        if (defaultTab >= 0) {
-            mViewPager.setCurrentItem(defaultTab);
-        }
         mViewPager.setOnPageChangeListener(mAdapter);
         PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
 

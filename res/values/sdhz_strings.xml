@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 The SudaMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Sdhz Three -->
+    <string name="three_gesture">Three finger gestures</string>
+    <string name="three_gesture_summary_on">Open three finger gestures</string>
+    <string name="three_gesture_summary_off">Close three finger gestures</string>
+    <string name="screenshot_gesture_sound">screenshot sound</string>
+    <string name="screenshot_summary_on">Enable screenshot sound</string>
+    <string name="screenshot_summary_off">Disable screenshot sound</string>
+
+    <!-- Show network speed -->
+    <string name="show_network_speed_title">Network speed</string>
+    <string name="show_network_speed_summary">Show network speed in status bar</string>
+    <string name="status_bar_network_traffic_style_disable">Disabled</string>
+    <string name="status_bar_network_traffic_style_up">Outgoing</string>
+    <string name="status_bar_network_traffic_style_down">Incoming</string>
+    <string name="status_bar_network_traffic_style_all">Outgoing and incoming</string>
+
+    <!-- Double tap to sleep on lockscreen -->
+    <string name="double_tap_sleep_anywhere_title">Double-tap to sleep</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap lockscreen to put the device to sleep</string>
+
+    <!-- Show Chinese Date -->
+    <string name="show_chinese_date">Show Chinese Date</string>
+
+    <!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
+
+    <!-- Animation Settings -->
+    <string name="animation_settings_title">Animations</string>
+
+    <!-- ListView animation -->
+    <string name="listview_animation_title">ListView animation</string>
+    <string name="listview_off">Off</string>
+    <string name="listview_wave_left">Wave (left)</string>
+    <string name="listview_wave_right">Wave (right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string> 
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string> 
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
+    <string name="listview_rotate">Rotate</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">ListView interpolator</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- Color Picker -->
+    <string name="clock_color_title">Color</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
+    <!--Status bar date -->
+    <string name="status_bar_date_title">Date</string>
+    <string name="status_bar_date_none">Hidden (default)</string>
+    <string name="status_bar_date_small">Small</string>
+    <string name="status_bar_date_normal">Normal</string>
+    <string name="status_bar_date_format_title">Date format</string>
+    <string name="status_bar_date_style">Date style</string>
+    <string name="status_bar_date_style_normal">Normal</string>
+    <string name="status_bar_date_style_lowercase">Lowercase</string>
+    <string name="status_bar_date_style_uppercase">Uppercase</string>
+    <string name="status_bar_date_format_custom">Custom java format</string>
+    <string name="status_bar_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="status_bar_date_string_edittext_summary">Enter string</string>
+
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_category">Clock</string>
+    <string name="clock_color_title">Color</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+    <string name="clock_font_style_title">Font</string>
+    <string name="clock_font_normal">Normal</string>
+    <string name="clock_font_italic">Italic</string>
+    <string name="clock_font_bold">Bold</string>
+    <string name="clock_font_bold_italic">Bold Italic</string>
+    <string name="clock_font_light">Light</string>
+    <string name="clock_font_light_italic">Light Italic</string>
+    <string name="clock_font_thin">Thin</string>
+    <string name="clock_font_thin_italic">Thin Italic</string>
+    <string name="clock_font_condensed">Condensed</string>
+    <string name="clock_font_condensed_italic">Condensed Italic</string>
+    <string name="clock_font_condensed_bold">Condensed Bold</string>
+    <string name="clock_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="clock_font_medium">Medium</string>
+    <string name="clock_font_medium_italic">Medium Italic</string>
+    <string name="clock_font_size_title">Font size</string>
+    <string name="status_bar_show_clock_second_title">Clock seconds</string>
+    <string name="clock_font_size_4">4</string>
+    <string name="clock_font_size_5">5</string>
+    <string name="clock_font_size_6">6</string>
+    <string name="clock_font_size_7">7</string>
+    <string name="clock_font_size_8">8</string>
+    <string name="clock_font_size_9">9</string>
+    <string name="clock_font_size_10">10</string>
+    <string name="clock_font_size_11">11</string>
+    <string name="clock_font_size_12">12</string>
+    <string name="clock_font_size_13">13</string>
+    <string name="clock_font_size_14">14</string>
+    <string name="clock_font_size_15">15</string>
+    <string name="clock_font_size_16">16</string>
+    <string name="clock_font_size_17">17</string>
+    <string name="clock_font_size_18">18</string>
+    <string name="clock_font_size_19">19</string>
+    <string name="clock_font_size_20">20</string>
+    <string name="clock_font_size_21">21</string>
+    <string name="clock_font_size_22">22</string>
+    <string name="clock_font_size_23">23</string>
+
+    <!-- General strings -->
+    <string name="default_string">Default</string>
+    <string name="disabled">Disabled</string>
+    <string name="ok">Ok</string>
+    <string name="extras_temasek_settings">Temasek Extras</string>
+    <string name="reset_default_message">Reset default</string>
+    <string name="additional_options_title">Additional options</string>
+    <string name="general_options_title">General</string>
+
+  <!-- Carrier Label -->
+    <string name="carrier_options">Carrier Label</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="status_bar_carrier_color">Carrier label color</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Keyguard carrier</string>
+    <string name="show_carrier_statusbar">Status bar carrier</string>
+    <string name="show_carrier_enabled">Enabled</string>
+    <string name="status_bar_carrier_size">Status bar operator size</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_icon">Battery icon style</string>
+    <string name="battery_not_title">Battery icon in notifications</string>
+    <string name="battery_not_summary">Battery icon will show up where the clear all button shows up</string>
+    <string name="battery_bar_location">Battery bar location</string>
+    <string name="battery_bar_color">Battery bar color</string>
+    <string name="battery_bar">Battery Bar</string>
+    <string name="battery_bar_summary">Battery bar position and color customization</string>
+    <string name="battery_bar_style_title">Battery bar style</string>
+    <string name="battery_bar_thickness_title">Battery bar thickness</string>
+    <string name="battery_bar_animate_title">Charging animation</string>
+    <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
+    <string name="help">Help</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="attention">Attention</string>
+    <string name="reset">Reset</string>
+    <string name="add">Add</string>
+    <string name="enabled">Enabled</string>
+    <string name="choose_app">Choose application</string>
+    <string name="battery_help">Hide</string>
+    <string name="battery_statubar">Statusbar</string>
+    <string name="battery_top">Top of navbar</string>
+    <string name="battery_bottom">Bottom of navbar</string>
+
+    <!-- Lockscreen weather -->
+    <string name="status_bar_show_weather_category">Weather</string>
+    <string name="lock_screen_weather_settings_title">Lock screen weather</string>
+    <string name="weather_show_weather_title">Show weather</string>
+    <string name="weather_show_weather_summary">Enable to show weather informations</string>
+    <string name="weather_show_location_title">Show location</string>
+    <string name="weather_show_location_summary">Enable to show the location</string>
+    <string name="weather_condition_icon_title">Condition icon</string>
+    <string name="weather_condition_icon_dlg_title">Coose an icon for displaying the weather condition</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colored</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="weather_colorize_all_icons_title">Colorize all icons</string>
+    <string name="weather_colorize_all_icons_summary">Enable to colorize all icons, disable to colorize only the monochrome icons</string>
+    <string name="icons_title">Icons</string>
+    <string name="position_right_title">Right</string>
+    <string name="position_centered_title">Centered</string>
+    <string name="hidden_title">Hidden</string>
+    <string name="dlg_reset_values_message">Reset values to default?</string>
+    <string name="dlg_reset_android">Ok</string>
+    <string name="colors_title">Colors</string>
+    <string name="text_title">Text</string>
+
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">Time Contextual Header</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+    <string name="status_bar_custom_header_default_title">Use poly HD images</string>
+    <string name="status_bar_custom_header_default_summary">Enable for poly hd images. Disable for original images.</string>
+    <string name="status_bar_custom_header_default_title">Select your images</string>
+    <string name="status_bar_custom_header_default_summary">Default, modern and poly HD</string>
+    <string name="custom_header_image_0">Default</string>
+    <string name="custom_header_image_1">Modern</string>
+    <string name="custom_header_image_2">Poly HD</string>
+ 
+    <!-- Circle app bar -->
+    <string name="category_app_circle_bar_title">App launcher</string>
+    <string name="app_circle_bar_title">App circle bar</string>
+    <string name="app_circle_bar_summary">Show circle app launcher after touching right side of screen</string>
+    <string name="app_circle_bar_included_apps_title">Included apps</string>
+    <string name="app_circle_bar_included_apps_summary">Apps will show in app circle bar</string>
+    <string name="trigger_width_title">Trigger width</string>
+    <string name="trigger_width_summary">Adjust the width of the trigger area</string>
+    <string name="trigger_top_title">Trigger position</string>
+    <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
+    <string name="trigger_bottom_title">Trigger height</string>
+    <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+
+    <!-- RAM bar -->
+    <string name="recents_show_membar_title">RAM memory bar</string>
+    <string name="recents_show_membar_summary_on">Available RAM memory bar will be displayed on recents view</string>
+    <string name="recents_show_membar_summary_off">Toggle to display available RAM memory bar on recents view</string>
+
+ <!-- Gesture Anywhere -->
+     <string name="gesture_anywhere_title">Gestures anywhere</string>
+     <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
+     <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
+     <string name="gesture_anywhere_position_title">Loction</string>
+     <string name="gesture_anywhere_position_left">Left edge</string>
+     <string name="gesture_anywhere_position_right">Right edge</string>
+     <string name="gesture_anywhere_gestures_title">Gestures</string>
+     <string name="gesture_anywhere_gestures_summary">Add, remove, and edit gestures</string>
+     <!-- Label, button used to add a gesture -->
+     <string name="ga_button_add">Add gesture</string>
+     <!-- Label, button used to reload all gestures -->
+     <string name="ga_button_reload">Reload</string>
+     <!-- Label, button used to cancel the operation of adding a gesture -->
+     <string name="ga_button_discard">Discard</string>
+     <!-- Label, button used to save a gesture newly created -->
+     <string name="ga_button_done">Done</string>
+     <!-- Label, prompt asking the user to enter the name of the gesture -->
+     <string name="ga_prompt_gesture_name">Name</string>
+     <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
+     <string name="ga_error_missing_name">You must enter a name</string>
+     <!-- success message, tells the user where the gesture was saved -->
+     <string name="ga_save_success">Gesture saved in %s</string>
+     <!-- Buttons in Rename gesture dialog box -->
+     <string name="ga_rename_action">OK</string>
+     <!-- Buttons in Rename gesture dialog box -->
+     <string name="ga_cancel_action">Cancel</string>
+     <!-- Message displayed when the user opens the gestures settings screen -->
+     <string name="ga_gestures_loading">Loading gestures...</string>
+     <!-- Message displayed when the user has no gestures -->
+     <string name="ga_gestures_empty">No gestures</string>
+     <!-- Title of the screen used to view/manage gestures -->
+     <string name="ga_gestures_activity">Gestures</string>
+     <!-- Noun, menu item used to edit a gesture -->
+     <string name="ga_gestures_edit">Edit</string>
+     <!-- Noun, menu item used to remove a gesture -->
+     <string name="ga_gestures_delete">Delete</string>
+     <!-- Message displayed when a gesture is successfully deleted -->
+     <string name="ga_gestures_delete_success">Gesture deleted</string>
+     <!-- Title of dialog box -->
+     <string name="ga_gestures_rename_title">Rename gesture</string>
+     <!-- Label of gesture name field in Rename gesture dialog box -->
+     <string name="ga_gestures_rename_label">Gesture name</string>
+     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
+     <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
+     <string name="trigger_category">Trigger region</string>
+     <string name="trigger_width_title">Trigger width</string>
+     <string name="trigger_width_summary">Adjust the width of the trigger area</string>
+     <string name="trigger_top_title">Trigger position</string>
+     <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
+     <string name="trigger_bottom_title">Trigger height</string>
+     <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+     <string name="picker_activities">Activities</string>
+     <string name="select_custom_app_title">Select custom app</string>
+     <string name="select_custom_activity_title">Select custom activity</string>
+     <string name="profile_applist_title">Applications</string>
+
+     <!-- navigation double -->
+    <string name="navigation_double_tap_itle">Double click on the navigation bar to sleep</string>
+    <string name="navigation_double_tap_itle_summary">Double click the navigation bar to close the screen blank</string>
+
+    <!-- PA Pie control -->
+    <string name="pa_piecontrol_settings_summary">Customize PA Pie 2.0 targets, style, size and color</string>
+    <string name="pa_pie_control_title">Pie Control</string>
+    <string name="pa_pie_control_enable_title">Enable Pie Control</string>
+    <string name="pa_pie_targets_title">Pie Targets</string>
+    <string name="pa_pie_style_title">Pie Style</string>
+    <string name="pa_pie_menu_title">Always show menu button</string>
+    <string name="pa_pie_menu_summary">Whether or not the menu button should always be shown, even when its not needed</string>
+    <string name="pa_pie_size_title">Pie Size</string>
+    <string name="pa_pie_size_summary">Define Pie controls size</string>
+    <string name="pa_pie_size_small">Small</string>
+    <string name="pa_pie_size_default">@string/pa_pie_mode_default</string>
+    <string name="pa_pie_size_large">Large</string>
+    <string name="pa_pie_size_gigantic">Gigantic</string>
+    <string name="pa_pie_size_monster">Monster</string>
+    <string name="pa_pie_size_enormous">Enormous</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_gravity_title">Pie Gravity</string>
+    <string name="pa_pie_gravity_summary">Select the location where the Pie will be placed</string>
+    <string name="pa_pie_gravity_bottom">Bottom</string>
+    <string name="pa_pie_gravity_right">Right</string>
+    <string name="pa_pie_gravity_left">Left</string>
+    <string name="pa_pie_gap_title">Item gap</string>
+    <string name="pa_pie_gap_summary">Adjust the gap that separates the Pie elements</string>
+    <string name="pa_pie_angle_title">Pie Angle</string>
+    <string name="pa_pie_angle_summary">Adjust the angle of pie\'s egdes from the attachment</string>
+    <string name="pa_pie_angle_none">None (old)</string>
+    <string name="pa_pie_angle_small">Small</string>
+    <string name="pa_pie_angle_big">Normal (default)</string>
+    <string name="pa_pie_angle_huge">Big</string>
+    <string name="pa_pie_angle_super">Huge</string>
+    <string name="pa_pie_gap_none">None</string>
+    <string name="pa_pie_gap_small">Small</string>
+    <string name="pa_pie_gap_big">Big (default)</string>
+    <string name="pa_pie_gap_huge">Huge</string>
+    <string name="pa_pie_mode_title">Pie Style</string>
+    <string name="pa_pie_mode_summary">Manage how animations and status additions will be handled</string>
+    <string name="pa_pie_mode_bare">Bare</string>
+    <string name="pa_pie_mode_quick">Quick</string>
+    <string name="pa_pie_mode_default">Default</string>
+    <string name="pa_pie_mode_slow">Slow</string>
+    <string name="pa_pie_lastapp_title">Last App</string>
+    <string name="pa_pie_lastapp_summary">Enable last app button</string>
+    <string name="pa_pie_killtask_title">Kill Task</string>
+    <string name="pa_pie_killtask_summary">Enable kill task button</string>
+    <string name="pa_pie_notifications_title">Notifications</string>
+    <string name="pa_pie_notifications_summary">Enable notifications button</string>
+    <string name="pa_pie_settings_panel_title">Quick Settings Panel</string>
+    <string name="pa_pie_settings_panel_summary">Enable expand quick settings panel button</string>
+    <string name="pa_pie_screenshot_title">Screenshot</string>
+    <string name="pa_pie_screenshot_summary">Enable screenshot button</string>
+    <string name="pa_pie_color_title">Pie Color Settings</string>
+    <string name="pa_pie_color_style_title">Pie Color Style</string>
+    <string name="pa_pie_background_title">Background Color</string>
+    <string name="pa_pie_select_title">Selection Color</string>
+    <string name="pa_pie_outlines_title">Outlines Color</string>
+    <string name="pa_pie_status_clock_title">Clock Color</string>
+    <string name="pa_pie_status_title">Status Color</string>
+    <string name="pa_pie_chevron_title">Chevron Color</string>
+    <string name="pa_pie_juice_title">Battery Juice Color</string>
+    <string name="pa_pie_button_color">Button Color</string>
+    <string name="pa_pie_button_color_title">Buttons Color</string>
+    <string name="pa_pie_always_right_title">Pie always on the right</string>
+    <string name="pa_pie_always_right_summary">Pie will be always shown on the right while in landscape</string>
+
+    <string name="reset_paranoid">Paranoid</string>
+    <string name="reset_android">Android</string>
+    <string name="disable_fc_notifications_title">FC disable notification</string>
+
+     <!-- Hold back to kill timeout -->
+    <string name="hold_back_to_kill_timeout_title">Kill app back button timeout</string>
+
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+
+    <!-- Set screenshot delay -->
+    <string name="powermenu_screenshot_delay_title">Set screenshot delay</string>
+	
+    <!-- Battery notifications -->
+    <string name="battery_saver_notif_title">Battery saver notification</string>
+    <string name="battery_saver_notif_summary">Show battery saver notification when enabled</string>
+    <string name="battery_low_notif_title">Low battery notification</string>
+    <string name="battery_low_notif_summary">Show low battery notification when enabled</string>
+
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Lock Clock Fonts</string>
+    <string name="lock_clock_font_summary">Change the default font of the lockscreen clock widget</string>
+    <string name="lock_clock_font_dialog_title">Select lock clock font</string>
+    <string name="lock_clock_font_normal">Roboto (default)</string>
+    <string name="lock_clock_font_bold">Roboto Bold</string>
+    <string name="lock_clock_font_italic">Roboto Italic</string>
+    <string name="lock_clock_font_bold_italic">Roboto Bold Italic</string>
+    <string name="lock_clock_font_light_normal">Roboto Light</string>
+    <string name="lock_clock_font_light_italic">Roboto Light Italic</string>
+    <string name="lock_clock_font_thin_normal">Roboto Thin</string>
+    <string name="lock_clock_font_thin_italic">Roboto Thin Italic</string>
+    <string name="lock_clock_font_condensed_normal">Roboto Condensed</string>
+    <string name="lock_clock_font_condensed_bold">Roboto Condensed Bold</string>
+    <string name="lock_clock_font_condensed_italic">Roboto Condensed Italic</string>
+    <string name="lock_clock_font_condensed_bold_italic">Roboto Condensed Bold Italic</string>
+    <string name="lock_clock_font_medium_normal">Roboto Medium</string>
+    <string name="lock_clock_font_medium_italic">Roboto Medium Italic</string>
+    <string name="lock_clock_font_black_normal">Roboto Black</string>
+    <string name="lock_clock_font_black_italic">Roboto Black Italic</string>
+    <string name="lock_clock_font_condensed_light_normal">Roboto Condensed Light</string>
+    <string name="lock_clock_font_condensed_light_italic">Roboto Condensed Light Italic</string>
+
+    <string name="lock_date_font_title">Lock screen date font</string>
+    <string name="lock_date_font_summary">Change the default lock screen date parts font</string>
+    <string name="lock_date_font_dialog_title">Select lock screen date font</string>
+
+    <!-- Shake up the recent task -->
+    <string name="direct_control_title">kinect</string>
+    <string name="shake_clean_recent">Shake up the recent task</string>
+    <string name="shake_clean_recent_summary">Recently, the task interface is cleaned by shaking</string>
+    <string name="shake_clean_notification">Shake up notification</string>
+    <string name="shake_clean_notification_summary">Notification bar notification shaking cleaning</string>
+
+    <!-- Lockscreen see through -->
+    <string name="lockscreen_see_through_title">Lockscreen blur</string>
+    <string name="lockscreen_see_through_summary">Blurs and displays the content behind your lockscreen.</string>
+    <string name="lockscreen_blur_radius">Blur effect intensity</string>
+
+     <!-- Date position -->
+    <string name="clock_date_position">Date position</string>
+    <string name="clock_date_right">Right of time</string>
+    <string name="clock_date_left">Left of time</string>
+
+    <!-- Hide Lockscreen clock & date -->
+    <string name="hide_lockscreen_clock_title">Show lockscreen clock</string>
+    <string name="hide_lockscreen_date_title">Show lockscreen date</string>
+
+   <!-- Recents Fullscreen -->
+    <string name="recents_fullscreen_summary_enabled">Recents in fullscreen is enabled</string>
+    <string name="recents_fullscreen_summary_disabled">Recents in fullscreen is disabled</string>
+    <string name="recents_full_screen_clock_title">Show clock</string>
+    <string name="recents_full_screen_clock_summary">Shows clock at the top while in fullscreen</string>
+    <string name="recents_full_screen_date_title">Show date</string>
+    <string name="recents_full_screen_date_summary">Shows date at the top while in fullscreen</string>
+
+    <!-- QS shade transparency -->
+    <string name="qs_transparent_shade">QS Panel Opacity</string>
+
+     <!-- QS header transparency -->
+    <string name="qs_transparent_header">QS header Opacity</string>
+
+</resources>
