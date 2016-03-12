@@ -61,13 +61,6 @@
            android:fragment="com.android.settings.rr.fragments.AppCircleBar"
            android:title="@string/app_circle_bar_title"/>
  
-        <!-- Pie Control -->
-        <PreferenceScreen
-             android:key="pa_pie_control"
-             android:title="@string/pa_pie_control_title"
-             android:fragment="com.android.settings.paranoid.PieControl"
-             />
-
             <!-- RAM Memory bar -->
             <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
                 android:key="systemui_recents_mem_display"
