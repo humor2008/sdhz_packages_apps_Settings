@@ -383,5 +383,8 @@
     <!-- Quick settings disable on lockscreen -->
     <string name="block_on_secure_keyguard_title">Disable quick settings on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disables quick settings in the keyguard for a secure lock only</string>
-
+    <string name="show_use_intrusive_call_speed_title">Call mode</string>
+    <string name="show_use_intrusive_call_title">Electric display mode on the desktop</string>
+    <string name="status_bar_use_intrusive_call_style_disable">default</string>
+    <string name="status_bar_use_intrusive_call_style_up">Full screen</string>
 </resources>

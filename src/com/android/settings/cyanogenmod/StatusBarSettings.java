@@ -89,6 +89,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";	
     private static final String LOCK_Date_FONTS = "lock_date_fonts";	
+    private static final String USE_INTRUSIVE_CALL = "use_intrusive_call";
 
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
@@ -121,6 +122,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mLockClockFonts;
     private ListPreference mLockDateFonts;
 	private ListPreference mClockDatePosition;
+	private ListPreference mUseIntrusiveCall;
 
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
@@ -168,6 +170,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
         mStatusBarNetworkTraffic
                 .setSummary(mStatusBarNetworkTraffic.getEntry());
         mStatusBarNetworkTraffic.setOnPreferenceChangeListener(this);
+
+        mUseIntrusiveCall = (ListPreference) prefSet
+                .findPreference(USE_INTRUSIVE_CALL);
+        int useintrusivecall = Settings.System.getInt(resolver,
+                Settings.System.USE_INTRUSIVE_CALL, 0);
+        mUseIntrusiveCall.setValue(String.valueOf(useintrusivecall));
+        mUseIntrusiveCall
+                .setSummary(mUseIntrusiveCall.getEntry());
+        mUseIntrusiveCall.setOnPreferenceChangeListener(this);
 
          // Status bar custom header hd
         mCustomHeaderDefault = (ListPreference) findPreference(PREF_CUSTOM_HEADER_DEFAULT);
@@ -509,6 +520,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                     Settings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE,
                     networkTrafficStyle);
             mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic
+                    .getEntries()[index]);
+            return true;
+        } else if (preference == mUseIntrusiveCall) {
+            int useintrusivecall = Integer.valueOf((String) newValue);
+            int index = mUseIntrusiveCall
+                    .findIndexOfValue((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.USE_INTRUSIVE_CALL,
+                    useintrusivecall);
+            mUseIntrusiveCall.setSummary(mUseIntrusiveCall
                     .getEntries()[index]);
             return true;
        } else if (preference == mColorPicker) {
