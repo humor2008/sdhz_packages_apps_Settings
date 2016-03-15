@@ -387,4 +387,7 @@
     <string name="show_use_intrusive_call_title">Electric display mode on the desktop</string>
     <string name="status_bar_use_intrusive_call_style_disable">default</string>
     <string name="status_bar_use_intrusive_call_style_up">Full screen</string>
+    <string name="qs_use_four_columns_title">Notification bar tile</string>
+    <string name="qs_use_four_columns_summary_on">The notification bar displays four tiles per line.</string>
+    <string name="qs_use_four_columns_summary_off">The notification bar displays three tiles per line.</string>
 </resources>

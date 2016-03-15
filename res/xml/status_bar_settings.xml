@@ -43,6 +43,14 @@
         android:entries="@array/entries_use_intrusive_call_style"
         android:entryValues="@array/values_use_intrusive_call_style"
         android:defaultValue="0" />
+ 
+ 	<!-- qs use four columns -->
+     <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+ 	  android:key="qs_use_four_columns"
+          android:title="@string/qs_use_four_columns_title"
+          android:summaryOn="@string/qs_use_four_columns_summary_on"
+          android:summaryOff="@string/qs_use_four_columns_summary_off"
+          android:defaultValue="false" />
 
     <!-- CarrierLabel blocker -->
     <PreferenceScreen

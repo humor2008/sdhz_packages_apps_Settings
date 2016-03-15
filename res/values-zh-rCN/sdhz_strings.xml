@@ -348,4 +348,7 @@
     <string name="show_use_intrusive_call_title">在桌面状态下来电显示模式</string>
     <string name="status_bar_use_intrusive_call_style_disable">默认</string>
     <string name="status_bar_use_intrusive_call_style_up">全屏</string>
+    <string name="qs_use_four_columns_title">通知栏瓦片</string>
+    <string name="qs_use_four_columns_summary_on">通知栏每行显示四片瓦片</string>
+    <string name="qs_use_four_columns_summary_off">通知栏每行显示三片瓦片</string>
 </resources>
