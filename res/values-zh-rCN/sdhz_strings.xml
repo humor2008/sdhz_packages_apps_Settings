@@ -351,4 +351,7 @@
     <string name="qs_use_four_columns_title">通知栏瓦片</string>
     <string name="qs_use_four_columns_summary_on">通知栏每行显示四片瓦片</string>
     <string name="qs_use_four_columns_summary_off">通知栏每行显示三片瓦片</string>
+    <string name="keyguard_toggle_torch_title">长按电源锁屏手电筒</string>
+    <string name="keyguard_toggle_torch_summary_off">关闭长按电源锁屏手电筒</string>
+    <string name="keyguard_toggle_torch_summary_on">开启长按电源锁屏手电筒</string>
 </resources>
