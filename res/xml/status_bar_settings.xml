@@ -29,6 +29,13 @@
             android:targetClass="com.android.systemui.tuner.TunerActivity$StatusBarIconActivity" />
     </PreferenceScreen>
 
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+    	android:key="keyguard_toggle_torch"
+        android:title="@string/keyguard_toggle_torch_title"
+        android:summaryOn="@string/keyguard_toggle_torch_summary_on"
+        android:summaryOff="@string/keyguard_toggle_torch_summary_off"
+        android:defaultValue="false" />
+
     <SwitchPreference
         android:key="block_on_secure_keyguard"
         android:title="@string/block_on_secure_keyguard_title"
