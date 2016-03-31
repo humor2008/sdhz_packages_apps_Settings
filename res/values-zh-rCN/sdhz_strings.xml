@@ -340,10 +340,6 @@
      <!-- QS header transparency -->
     <string name="qs_transparent_header">QS面板顶部透明度</string>
 
-  <!-- Quick settings disable on lockscreen -->
-    <string name="block_on_secure_keyguard_title">锁屏界面禁用快速设置</string>
-    <string name="block_on_secure_keyguard_summary">仅在安全锁屏界面禁用快速设置</string>
-
     <string name="show_use_intrusive_call_speed_title">来电通话模式</string>
     <string name="show_use_intrusive_call_title">在桌面状态下来电显示模式</string>
     <string name="status_bar_use_intrusive_call_style_disable">默认</string>

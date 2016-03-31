@@ -62,7 +62,6 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import com.android.settings.widget.NumberPickerPreference;
 import com.android.settings.rr.SeekBarPreference;
 import com.android.settings.rr.SeekBarPreferenceCham;
-import org.cyanogenmod.internal.util.CmLockPatternUtils;
 
 public class StatusBarSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener, Indexable {
@@ -85,7 +84,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String PREF_CLOCK_DATE_POSITION = "clock_date_position";
     private static final String PREF_QS_TRANSPARENT_SHADE = "qs_transparent_shade";
     private static final String PREF_QS_TRANSPARENT_HEADER = "qs_transparent_header";
- 	private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String SCREENSHOT_DELAY = "screenshot_delay";
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";	
     private static final String LOCK_Date_FONTS = "lock_date_fonts";	
@@ -118,7 +116,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarClockFontSize;
     private ListPreference mCustomHeaderDefault;
     private SwitchPreference mCustomHeader;
-    private SwitchPreference mBlockOnSecureKeyguard;
     private ListPreference mLockClockFonts;
     private ListPreference mLockDateFonts;
 	private ListPreference mClockDatePosition;
@@ -140,8 +137,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final int MIN_DELAY_VALUE = 1;
     private static final int MAX_DELAY_VALUE = 30;
 
-    private static final int MY_USER_ID = UserHandle.myUserId();
-
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -155,8 +150,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
-		
-		final CmLockPatternUtils lockPatternUtils = new CmLockPatternUtils(getActivity());
 
         mPrefSet = getPreferenceScreen();
 
@@ -226,16 +219,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 Settings.System.QS_TRANSPARENT_SHADE, 255);
         mQSShadeAlpha.setValue(qSShadeAlpha / 1);
         mQSShadeAlpha.setOnPreferenceChangeListener(this);
-
-            // Block QS on secure LockScreen
-            mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
-            if (lockPatternUtils.isSecure(MY_USER_ID)) {
-                mBlockOnSecureKeyguard.setChecked(Settings.Secure.getIntForUser(resolver,
-                        Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1, UserHandle.USER_CURRENT) == 1);
-                mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
-           } else if (mBlockOnSecureKeyguard != null) {
-                prefSet.removePreference(mBlockOnSecureKeyguard);
-            }
 
  			// QS header alpha
             mQSHeaderAlpha =
@@ -399,11 +382,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             Settings.System.putInt(mCr, Settings.System.SCREENSHOT_DELAY,
                     value);
             return true;
-        } else if (preference == mBlockOnSecureKeyguard) {
-        	Settings.Secure.putInt(resolver,
-            	Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
-                (Boolean) newValue ? 1 : 0);
-        	return true;
         } else if (preference == mStatusBarAmPm) {
             int statusBarAmPm = Integer.valueOf((String) newValue);
             int index = mStatusBarAmPm.findIndexOfValue((String) newValue);
